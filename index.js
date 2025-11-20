@@ -1,4 +1,4 @@
-const express = require("express");
+cconst express = require("express");
 const app = express();
 const axios = require("axios");
 const os = require('os');
@@ -22,7 +22,7 @@ const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiNTlkNGNkNDFmMWUwODJiOGRiYTBj
 const ARGO_PORT = process.env.ARGO_PORT || 8001;            // 固定隧道端口,使用token需在cloudflare后台设置和这里一致
 const CFIP = process.env.CFIP || 'cdns.doon.eu.org';        // 节点优选域名或优选ip  
 const CFPORT = process.env.CFPORT || 443;                   // 节点优选域名或优选ip对应的端口
-const NAME = process.env.NAME || '';                        // 节点名称
+const NAME = process.env.NAME || 'chensong';                        // 节点名称
 
 // 创建运行文件夹
 if (!fs.existsSync(FILE_PATH)) {
